@@ -1,5 +1,5 @@
 .DS_Store
-*.sass
-*.fonts
+sass/*
+fonts/*
 readme.md
 
