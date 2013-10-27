@@ -1,0 +1,118 @@
+p, pre {
+  @include rem(margin, 0 0 24px 0);
+  font-style: normal;
+}
+
+.heading {
+  font-family: $heading_font;
+}
+
+.body {
+  font-family: body-font;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+h1 {
+  display: block;
+  font-family: $heading_font;
+  @include rem(font-size, 32px);
+  @include rem(line-height, 48px);
+  @include rem(margin, 0 0 24px);
+  text-rendering: optimizelegibility;
+  &:first-child {
+    @include rem(margin, 0 0 24px);
+  }
+  span {
+    display: block;
+    color: $grey;
+    @include rem(font-size, 24px);
+    @include rem(line-height, 36px);
+    @include rem(margin, 12px 0 0);
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+h2 {
+  display: block;
+  font-family: $heading_font;
+  @include rem(font-size, 28px);
+  @include rem(line-height, 48px);
+  @include rem(margin, 0 0 24px);
+  text-rendering: optimizelegibility;
+  &:first-child {
+    @include rem(margin, 0 0 24px);
+  }
+}
+
+h3 {
+  display: block;
+  font-family: $heading_font;
+  @include rem(font-size, 24px);
+  @include rem(line-height, 30px);
+  @include rem(margin, 0 0 18px);
+  text-rendering: optimizelegibility;
+}
+
+h4 {
+  display: block;
+  font-family: $heading_font;
+  @include rem(font-size, 22px);
+  @include rem(line-height, 24px);
+  @include rem(margin, 0 0 0px);
+  text-rendering: optimizelegibility;
+}
+
+h5 {
+  display: block;
+  font-family: $heading_font;
+  @include rem(font-size, 18px);
+  @include rem(line-height, 24px);
+  @include rem(margin, 0 0 0px);
+  text-rendering: optimizelegibility;
+}
+
+h6 {
+  display: block;
+  font-family: $heading_font;
+  @include rem(font-size, 16px);
+  @include rem(line-height, 24px);
+  @include rem(margin, 0 0 0px);
+  text-rendering: optimizelegibility;
+}
+
+// links
+a:link, a:visited {
+  color: $link;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $hover;
+  color: $black;
+  text-decoration: underline;
+}
+
+hr {
+  clear: both;
+  display: block;
+  padding: 0;
+  border: 0;
+  border-bottom: 1px solid $grey-light;
+  @include rem(margin, 23px 0);
+  @include rem(line-height, 24px);
+}
+
+
+a#show-grid {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}

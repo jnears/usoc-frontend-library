@@ -1,0 +1,30 @@
+@import "_variables.css.sass"
+@import "_mixins.css.sass"
+
+*, *:before, *:after
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+
+@import "normalize.css.sass"
+
+html
+  background: $white
+  color: $grey1
+  font-family: $body_font
+  font-weight: normal
+  font-size: #{$basefont / 16}em
+  line-height: 1.5em
+  padding: 0
+  -webkit-font-smoothing: antialiased
+  overflow-x: hidden
+  &.grid
+    background: url(asset_path("drop.png", image)) center 0px repeat-y $white
+10: 
+11: html {
+12:   background: $white;
+13:   font-size: $basefont;
+14:   &.grid {
+15:     background: url(../images/grid.png) repeat
+16:   }
+17: }
