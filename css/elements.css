@@ -1,19 +1,19 @@
 /*
-Syntax error: Undefined mixin 'rem-fallback'.
-        on line 13 of usoc-frontend-library/sass/elements.scss, in `rem-fallback'
-        from line 13 of usoc-frontend-library/sass/elements.scss
+Syntax error: Undefined mixin 'rem'.
+        on line 2 of usoc-frontend-library/sass/elements.scss, in `rem'
+        from line 2 of usoc-frontend-library/sass/elements.scss
 
-8: //h5 = 18px (18/10 = 1.8rem)
-9: 
-10: 
-11: p {
-12: margin-top: 0;
-13:  @include rem-fallback(margin, 10, 20, 30, 40);
-14: }
+1: p, pre {
+2:   @include rem(margin, 0 0 24px 0);
+3:   font-style: normal;
+4: }
+5: 
+6: .heading {
+7:   font-family: $heading_font;
 
 Backtrace:
-usoc-frontend-library/sass/elements.scss:13:in `rem-fallback'
-usoc-frontend-library/sass/elements.scss:13
+usoc-frontend-library/sass/elements.scss:2:in `rem'
+usoc-frontend-library/sass/elements.scss:2
 /Users/jnears/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
 /Users/jnears/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
 /Users/jnears/.rbenv/versions/1.9.3-p448/lib/ruby/gems/1.9.1/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
@@ -56,4 +56,4 @@ usoc-frontend-library/sass/elements.scss:13
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'rem-fallback'.\A         on line 13 of usoc-frontend-library/sass/elements.scss, in `rem-fallback'\A         from line 13 of usoc-frontend-library/sass/elements.scss\A \A 8: //h5 = 18px (18/10 = 1.8rem)\A 9: \A 10: \A 11: p {\A 12: margin-top: 0;\A 13:  @include rem-fallback(margin, 10, 20, 30, 40);\A 14: }"; }
+  content: "Syntax error: Undefined mixin 'rem'.\A         on line 2 of usoc-frontend-library/sass/elements.scss, in `rem'\A         from line 2 of usoc-frontend-library/sass/elements.scss\A \A 1: p, pre {\A 2:   @include rem(margin, 0 0 24px 0);\A 3:   font-style: normal;\A 4: }\A 5: \A 6: .heading {\A 7:   font-family: $heading_font;"; }
