@@ -1,28 +1,56 @@
 <!DOCTYPE html>
-<html style class="grid" lang="en">
+<html style class="" lang="en">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+Use the meta charset attribute in a meta element at the top of the head element, and ensure that the whole declaration fits within the first 1024 bytes of the page.
+
+<meta charset="UTF-8">
 <link href="css/main.css" rel="stylesheet" media="screen">
 </head>
 <body>
 
-<h1 class="strong">Research, findings and impact<span>Working papers, publications and getting involved</span></h1>
+<div id="top"></div>
 
-<p>Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. <a href="#">Duis aute irure dolor</a> in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
+<header role="banner">
+<nav role="navigation">
+<ol>
+<li><a class="active" href="#">About the study</a></li>
+<li><a href="#">News</a></li>
+<li><a href="#">Participants</a></li>
+<li><a href="#">Research, findings and impact</a></li>
+<li><a href="#">Data and documentation</a></li>
+<li><a href="#">Contact</a></li>
+</ol>
+</nav>
+</header>
+
+<div class="container" role="main">
+
+<h1>Typography<span>All HTML headings are available.</span></h1>
+<h1>h1.heading</h1>
+<h2>h2.heading</h2>
+<h3>h3.heading</h3>
+<h4>h4.heading</h4>
+<h5>h5.heading</h5>
+<h6>h6.heading</h6>
 
 <hr>
 
-<p class="italic">Ut enim ad minim veniam,
+<h1>Body Copy</h1>
+<p class="subheading">P SUBHEADING Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. <a href="#">Duis aute irure dolor</a> in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
+
+<p class="italic">P ITALIC Ut enim ad minim veniam,
 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<h2>H2 Heading</h2>
 
 <p class="heading italic strong">Ut enim ad minim veniam,
 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -30,7 +58,7 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
 
-<p>Ut enim ad minim veniam,
+<p class="subheading lead">Ut enim ad minim veniam,
 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
@@ -72,7 +100,48 @@ quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<a href="#" id="show-grid" class="btn">Toggle grid</a>
+
+<hr>
+
+<h2>Buttons</h2>
+
+<button type="button" class="btn btn-std">btn-std</button>
+
+<button type="button" class="btn btn-std"><a href="#">btn-std</a></button>
+
+<button type="button" class="btn btn-blue">btn-blue</button>
+
+<button type="button" class="btn btn-green">btn-green</button>
+
+<button type="button" class="btn btn-yellow">btn-yellow</button>
+
+<hr>
+<button type="button" class="btn btn-std large">btn-std</button>
+
+<button type="button" class="btn btn-std large"><a href="#">btn-std large</a></button>
+
+<button type="button" class="btn btn-blue large">btn-blue large</button>
+
+<button type="button" class="btn btn-green large">btn-green large</button>
+
+<button type="button" class="btn btn-yellow large">btn-yellow large</button>
+
+<hr>
+<h2>Blockquote</h2>
+<blockquote><p class="italic">“Staying out late without your parents knowing is associated with visiting pubs or bars more often; with frequency of alcohol consumption; with smoking, and with cannabis use. These associations are visible for both boys and girls, though they are more pronounced for girls in relation to smoking and drinking. Staying out late without your parents knowing is also related to emotional problems: boys are more at risk of conduct problems, whereas the relationship between staying out at night and both hyperactivity and poor self-esteem is much more pronounced for girls.”</p>
+</blockquote>
+
+<p>Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<a href="#" id="show-grid">Toggle grid</a>
+
+
+</div>
+
+
 <script  src="script/jquery-1.10.2.min.js"></script>
 <script>
   $( document ).ready(function() {

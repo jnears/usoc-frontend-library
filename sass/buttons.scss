@@ -1,0 +1,67 @@
+.btn {
+  display: inline-block;
+  position: relative;
+  @include rem(font-size, 16px);
+  font-family: $chevin_medium;
+  font-weight: normal;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  background-color: #fcfcfc;
+  @include rem(padding, 5px 12px);
+  @include rem(margin, 8px 0);
+  border-radius: $radius;
+  &.large {
+    @include rem(font-size, 20px);
+    @include rem(margin, 7px 0);
+    @include rem(padding, 4px 12px);
+  }
+}
+
+a.btn {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.btn-std {
+  @include mid_grey_gradient;
+  border-color: $mid_grey;
+  &:hover, &:active {
+    background: $light_grey;
+    border-color: $mid_grey;
+  }
+}
+
+.btn-blue {
+  @include blue_gradient;
+  border-color: $blue;
+  color: $white;
+  &:hover, &:active {
+    background: $btn_blue;
+    border-color: $dark_blue;
+  }
+}
+
+.btn-green {
+  @include green_gradient;
+  border-color: $mid_green;
+  color: $white;
+  &:hover, &:active {
+    background: $mid_green;
+    border-color: $dark_green;
+  }
+}
+
+.btn-yellow {
+  @include yellow_gradient;
+  border-color: $mid_yellow;
+  color: $white;
+  &:hover, &:active {
+    background: $mid_yellow;
+    border-color: $dark_yellow;
+  }
+}

@@ -1,0 +1,45 @@
+header[role=banner] {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: $white;
+  nav[role=navigation] {
+    @include rem(width, 945px);
+    ol {
+      @include rem(margin, 5px);
+      list-style-type: none;
+      li {
+        float: left;
+        font-weight:normal;
+        margin:0;
+        @include rem(font-size, 13px);
+        a{
+          text-decoration:none;
+          display:block;
+          @include rem(padding, 0 12px);
+          @include rem(margin, 0 4px);
+          border-radius: $radius;
+          &:hover {
+            background: $light_grey;
+          }
+          &.active {
+            background: $dark_blue;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+body:not(.home) .container[role=main] {
+  padding-top: 48px;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 945px;
+}

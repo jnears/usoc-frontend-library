@@ -1,7 +1,6 @@
 $base_font_size: 16px;
 $baseline: $base_font_size * 1.5;
 
-
 //fonts
 $body_font: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $heading_font: "ChevinLight", Helvetica, Arial, sans-serif;
@@ -12,10 +11,23 @@ $chevin_medium_italic: "ChevinMedium", "Helvetica Neue", Helvetica, Arial, sans-
 
 
 //colours
-$white: #ffffff;
+$pink: #e00747;
+$blue: #0c66be;
+$btn_blue: #3c6a91;
+$dark_blue: #084887;
+$green: #60c659;
+$mid_green: #4fa349;
+$dark_green: #3e803a;
+$yellow: #ffc61e;
+$mid_yellow: #dda62f;
+$dark_yellow: #c29229;
 $black: #000023;
-$grey: #403f41;
-$grey-light: #cccccc;
+$grey: #969696;
+$light_grey: #eeeeee;
+$mid_grey: #cccccc;
+$dark_grey: #403f41;
+$white: #ffffff;
+$light_black: #808091;
 
 //links
 $link: #0c6dcc;
