@@ -11,12 +11,12 @@ p, pre {
     @include green_gradient;
     @include rounded;
     font-family: ChevinLight;
-    @include rem(font-size, 20px);
-    @include rem(padding, 22px);
+    @include rem-fallback(font-size, 1.25);
+    @include rem-fallback(padding, 1.5);
     width: 30%;
     float: right;
     color: $white;
-    @include rem(margin, 8px 8px 0 16px);
+    @include rem-fallback(margin, 0, 0.5, 0, 1);
     & a {
       color: $white;
       text-decoration: underline;
@@ -69,12 +69,15 @@ h1 {
     display: block;
     color: $grey;
     @include rem-fallback(font-size, 1.5);
-    @include rem(line-height, 36px);
-    @include rem-fallback(margin, 0.75, 0, 0);
+    @include rem-fallback(line-height, 1.5);
     font-weight: normal;
     font-style: normal;
+    &.inline {
+    display: inline
+    }
   }
 }
+
 
 h2 {
   display: block;
@@ -136,14 +139,8 @@ a:hover {
   text-decoration: underline;
 }
 
-hr {
-  clear: both;
-  display: block;
-  padding: 0;
-  border: 0;
-  border-bottom: 1px solid $light_grey;
-  @include rem-fallback(margin, 1.4375, 0);
-  @include rem-fallback(line-height, 1.5);
+small {
+  @include rem-fallback(font-size, 0.85);
 }
 
 time {
@@ -165,3 +162,13 @@ blockquote {
   @include rem-fallback(font-size, 1.25);
   @include rem-fallback(margin, 0.75, 2.5);
 }
+
+hr {
+  clear: both;
+  display: block;
+  padding: 0;
+  border: 0;
+  border-bottom: 1px solid $light_grey;
+  @include rem-fallback(margin, (($baseline - 1) / $base_font_size), 0);
+  @include rem-fallback(line-height, 1.5);
+  }
