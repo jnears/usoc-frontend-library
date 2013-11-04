@@ -716,6 +716,37 @@ a.btn {
     background: #dda62f;
     border-color: #c29229; }
 
+ul {
+  list-style-item: disc; }
+
+ul, ol {
+  padding: 0px 0px 0px 40px;
+  padding: 0rem 0rem 0rem 2.5rem;
+  margin: 0px 0px 24px 0px;
+  margin: 0rem 0rem 1.5rem 0rem;
+  list-style-position: inside; }
+
+ul, ol, dl {
+  margin: 24px 0px;
+  margin: 1.5rem 0rem; }
+
+ul ul,
+ol ol {
+  margin: 0px 0px 0px 0px;
+  margin: 0rem 0rem 0rem 0rem; }
+
+dl dt {
+  font-weight: bold; }
+dl dd {
+  margin: 0px 0px 0px 32px;
+  margin: 0rem 0rem 0rem 2rem; }
+
+ol.tag-list li {
+  list-style-type: none;
+  float: left;
+  margin: 3.2px;
+  margin: 0.2rem; }
+
 header[role=banner] {
   position: fixed;
   z-index: 3;
