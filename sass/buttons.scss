@@ -13,6 +13,11 @@
   @include rem(padding, 5px 12px);
   @include rem(margin, 8px 0);
   border-radius: $radius;
+  &.small {
+  padding: 5px 12px;
+  @include rem-fallback(font-size, 0.75);
+  @include rem-fallback(line-height, 1.25);
+  }
   &.large {
     @include rem(font-size, 20px);
     @include rem(margin, 7px 0);
