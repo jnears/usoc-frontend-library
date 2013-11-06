@@ -1,24 +1,32 @@
 /*
-Syntax error: Undefined variable: "$white".
-        on line 7 of usoc-frontend-library/sass/nav.scss
+Syntax error: Undefined variable: "$red".
+        on line 4 of usoc-frontend-library/sass/forms.scss
 
-2:   position: fixed;
-3:   z-index: 3;
-4:   top: 0;
-5:   left: 0;
-6:   right: 0;
-7:   background: $white;
-8:   nav[role=navigation] {
-9:     @include rem(width, 945px);
-10:     ol {
-11:       @include rem(margin, 5px);
-12:       list-style-type: none;
+1: form {
+2:   abbr[title="Required"] {
+3:       border: none;
+4:       color: $red;
+5:     }
+6:  }
+7: 
+8: 
+9: fieldset {
 
 Backtrace:
-usoc-frontend-library/sass/nav.scss:7
+usoc-frontend-library/sass/forms.scss:4
 /Users/jnears/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/script/variable.rb:49:in `_perform'
 /Users/jnears/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/script/node.rb:40:in `perform'
 /Users/jnears/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
+/Users/jnears/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/jnears/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/jnears/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/jnears/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/jnears/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/jnears/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/jnears/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/jnears/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/jnears/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/jnears/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
 /Users/jnears/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
 /Users/jnears/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
 /Users/jnears/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
@@ -61,4 +69,4 @@ usoc-frontend-library/sass/nav.scss:7
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$white\".\A         on line 7 of usoc-frontend-library/sass/nav.scss\A \A 2:   position: fixed;\A 3:   z-index: 3;\A 4:   top: 0;\A 5:   left: 0;\A 6:   right: 0;\A 7:   background: $white;\A 8:   nav[role=navigation] {\A 9:     @include rem(width, 945px);\A 10:     ol {\A 11:       @include rem(margin, 5px);\A 12:       list-style-type: none;"; }
+  content: "Syntax error: Undefined variable: \"$red\".\A         on line 4 of usoc-frontend-library/sass/forms.scss\A \A 1: form {\A 2:   abbr[title=\"Required\"] {\A 3:       border: none;\A 4:       color: $red;\A 5:     }\A 6:  }\A 7: \A 8: \A 9: fieldset {"; }

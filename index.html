@@ -177,6 +177,80 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	<dd>The seeds of the fruit from certain coffee trees.</dd>
 </dl>
 
+
+<h2>Forms</h2>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut <a href="#">labore et dolore</a> magna aliqua. Ut enim ad minim veniam</p>
+
+      <form>
+        <!-- <fieldset>
+          <legend>Legend Name</legend> -->
+
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" name="name" placeholder="at least 3 characters" />
+          </div>
+
+          <div class="field">
+            <label for="age">Age</label>
+            <input type="text" name="age" />
+          </div>
+
+          <div class="field">
+            <label for="shoe">Shoe size <abbr title="Required">*</abbr></label>
+            <input type="text" name="shoe" required />
+          </div>
+<!--  
+          <div class="field large">
+            <label for="comment">Comments</label>
+            <textarea rows="2"></textarea>
+          </div>
+
+         <div class="field">
+            <label for="nights">Nights</label>
+            <input type="number" name="nights" value="1" min="1" max="30" required>
+          </div>
+
+          <div class="field">
+            <label for="country">Country</label>
+            <select name="country">
+              <option>1 England</option>
+              <option>2 Ireland</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+
+          <fieldset class="options">
+          <legend>Checkbox <abbr title="Required">*</abbr></legend>
+          <ul>
+              <li><label for="checkbox1"><input id="checkbox1" name="checkbox" type="checkbox" checked="checked"> Choice A</label></li>
+              <li><label for="checkbox2"><input id="checkbox2" name="checkbox" type="checkbox"> Choice B</label></li>
+              <li><label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox"> Choice C</label></li>
+          </ul>
+          </fieldset>
+
+          <fieldset class="options">
+          <legend>Radios <abbr title="Required">*</abbr></legend>
+          <ul>
+              <li><label for="radio1"><input id="radio1" name="radio" type="radio" checked="checked"> Choice A</label></li>
+              <li><label for="radio2"><input id="radio2" name="radio" type="radio"> Choice B</label></li>
+              <li><label for="radio3"><input id="radio3" name="radio" type="radio"> Choice C</label></li>
+          </ul>
+          </fieldset>
+
+
+          <div class="field control">
+            <input type="submit" value="Save" class="btn" /><a href="#">cancel</a>
+          </div> -->
+
+  <!--       </fieldset> -->
+      </form>
+<p>Description lists associate specific names and their values within a list, for example items in an ingredient list and their descriptions, article metadata such as authors and categories and their values, or competition winners and the years in which they won.</p>
+
+
 <time datetime="2013-10-09">DATETIME - 09 Oct 2013</time>
 
 <a href="#" id="show-grid">Toggle grid</a>
@@ -188,13 +262,9 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 <script  src="script/jquery-1.10.2.min.js"></script>
 <script>
   $( document ).ready(function() {
- 
     $( "a#show-grid" ).click(function( ) {
- 
         $("html").toggleClass("grid");
- 
     });
- 
 });
 
 </script>

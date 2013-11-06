@@ -753,6 +753,53 @@ ol.tag-list li {
   margin: 3.2px;
   margin: 0.2rem; }
 
+form abbr[title="Required"] {
+  border: none;
+  color: #ce001f; }
+
+fieldset {
+  border: 1px solid #cccccc;
+  margin: 22px 0px;
+  margin: 1.375rem 0rem;
+  border-radius: 5px; }
+
+label {
+  font-weight: normal;
+  line-height: 36.8px;
+  line-height: 2.3rem;
+  float: left;
+  width: 25%;
+  padding-right: 1em;
+  text-align: right; }
+
+div.field {
+  min-height: 48px;
+  min-height: 3rem;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem; }
+
+input[type=text],
+input[type=number],
+input[type=password],
+input[type=search],
+textarea,
+select {
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  width: 75%;
+  padding: 8px;
+  padding: 0.5rem;
+  margin-bottom: 12px;
+  margin-bottom: 0.75rem; }
+  input[type=text].large,
+  input[type=number].large,
+  input[type=password].large,
+  input[type=search].large,
+  textarea.large,
+  select.large {
+    min-height: 120px;
+    min-height: 7.5rem; }
+
 header[role=banner] {
   position: fixed;
   z-index: 3;
@@ -788,7 +835,8 @@ header[role=banner] {
             color: white; }
 
 body:not(.home) .container[role=main] {
-  padding-top: 48px; }
+  padding-top: 52.8px;
+  padding-top: 3.3rem; }
 
 .container {
   position: relative;
