@@ -35,7 +35,7 @@ header[role=banner] {
 }
 
 body:not(.home) .container[role=main] {
-  @include rem-fallback(padding-top, 3.3em);
+  @include rem-fallback(padding-top, 3);
 }
 
 .container {

@@ -590,42 +590,22 @@ hr {
   font-family: "ChevinMedium", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   text-align: center;
+  color: #969696;
   white-space: nowrap;
   vertical-align: middle;
   cursor: pointer;
   border: none;
+  outline: 0;
   background-color: #fcfcfc;
-  padding: 8px 12px;
-  padding: 0.5rem 0.75rem;
+  padding: 12px 16px;
+  padding: 0.75rem 1rem;
   line-height: 16px;
   line-height: 1rem;
-  margin: 8px 0px;
-  margin: 0.5rem 0rem;
+  margin: 4px 0px;
+  margin: 0.25rem 0rem;
   border-radius: 5px;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset; }
-  .btn.small {
-    padding: 6px 12px;
-    padding: 0.375rem 0.75rem;
-    font-size: 12px;
-    font-size: 0.75rem;
-    margin: 10px 0px;
-    margin: 0.625rem 0rem;
-    line-height: 16px;
-    line-height: 1rem; }
-  .btn.large {
-    font-size: 20px;
-    font-size: 1.25rem;
-    margin: 7px 0;
-    margin: 0.4375rem 0;
-    padding: 4px 12px;
-    padding: 0.25rem 0.75rem; }
-
-a.btn {
-  text-decoration: none; }
-  a.btn:hover {
-    text-decoration: underline; }
-
-.btn-std {
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08) inset;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08) inset;
   background: #fcfcfc;
   /* Old browsers */
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -646,9 +626,40 @@ a.btn {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#dfdfdf',GradientType=0 );
   /* IE6-8 */
   border-color: #cccccc; }
-  .btn-std:hover, .btn-std:active {
+  .btn:hover, .btn:active {
     background: #eeeeee;
-    border-color: #cccccc; }
+    border-color: #cccccc;
+    color: #403f41; }
+  .btn.fluid {
+    width: 100%; }
+  .btn.circular {
+    border-radius: 10em; }
+  .btn.icon {
+    line-height: 12.8px;
+    line-height: 0.8rem; }
+  .btn.small {
+    font-size: 12px;
+    font-size: 0.75rem;
+    padding: 10px 12px;
+    padding: 0.625rem 0.75rem;
+    margin: 8px 0px;
+    margin: 0.5rem 0rem;
+    line-height: 12px;
+    line-height: 0.75rem; }
+  .btn.large {
+    font-size: 20px;
+    font-size: 1.25rem;
+    padding: 14px 20px;
+    padding: 0.875rem 1.25rem;
+    margin: 0px;
+    margin: 0rem;
+    line-height: 20px;
+    line-height: 1.25rem; }
+
+a.btn {
+  text-decoration: none; }
+  a.btn:hover {
+    text-decoration: underline; }
 
 .btn-blue {
   background: #0c66be;
@@ -670,11 +681,10 @@ a.btn {
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#457aa7', endColorstr='#3c6a91',GradientType=0 );
   /* IE6-8 */
-  border-color: #0c66be;
   color: white; }
   .btn-blue:hover, .btn-blue:active {
-    background: #3c6a91;
-    border-color: #084887; }
+    background: #084887;
+    color: white; }
 
 .btn-green {
   background: #60c659;
@@ -696,11 +706,10 @@ a.btn {
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5fba5a', endColorstr='#53a24e',GradientType=0 );
   /* IE6-8 */
-  border-color: #4fa349;
   color: white; }
   .btn-green:hover, .btn-green:active {
     background: #4fa349;
-    border-color: #3e803a; }
+    color: white; }
 
 .btn-yellow {
   background: #ffc61e;
@@ -722,11 +731,10 @@ a.btn {
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#efb333', endColorstr='#dda62f',GradientType=0 );
   /* IE6-8 */
-  border-color: #dda62f;
   color: white; }
   .btn-yellow:hover, .btn-yellow:active {
     background: #dda62f;
-    border-color: #c29229; }
+    color: white; }
 
 ul {
   list-style-item: disc; }
@@ -841,8 +849,8 @@ header[role=banner] {
             color: white; }
 
 body:not(.home) .container[role=main] {
-  padding-top: 52.8px;
-  padding-top: 3.3rem; }
+  padding-top: 48px;
+  padding-top: 3rem; }
 
 .container {
   position: relative;
