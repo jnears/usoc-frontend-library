@@ -21,9 +21,9 @@ label {
     text-align: right;
     }
 
- div.field {
-    @include rem-fallback(min-height, ($baseline * 2) / $base_font_size);
-    @include rem-fallback(margin-bottom, 1.5);
+div.field {
+  @include rem-fallback(min-height, ($baseline * 2) / $base_font_size);
+  @include rem-fallback(margin-bottom, 1.5);
 }
 
 

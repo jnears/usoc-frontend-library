@@ -576,9 +576,12 @@ hr {
   display: block;
   padding: 0;
   border: 0;
+  margin: 0;
   border-bottom: 1px solid #eeeeee;
-  margin: 23px 0px;
-  margin: 1.4375rem 0rem;
+  padding-top: 23px;
+  padding-top: 1.4375rem;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
   line-height: 24px;
   line-height: 1.5rem; }
 
