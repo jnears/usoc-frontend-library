@@ -168,7 +168,9 @@ hr {
   display: block;
   padding: 0;
   border: 0;
+  margin: 0;
   border-bottom: 1px solid $light_grey;
-  @include rem-fallback(margin, (($baseline - 1) / $base_font_size), 0);
+  @include rem-fallback(padding-top, (($baseline - 1) / $base_font_size));
+  @include rem-fallback(margin-bottom, 1.5);
   @include rem-fallback(line-height, 1.5);
   }
