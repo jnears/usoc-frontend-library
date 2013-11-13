@@ -433,32 +433,88 @@ p, pre {
       p.highlight a:hover, pre.highlight a:hover {
         color: white;
         text-decoration: none; }
-  p.callout, pre.callout {
-    overflow: hidden;
-    background-color: transparent;
-    background-color: rgba(96, 198, 89, 0.2);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#3360C659,endColorstr=#3360C659);
-    zoom: 1;
-    padding: 24px;
-    padding: 1.5rem;
-    border-left: 6px solid #60c659;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    margin: 0 0 24px 0;
-    margin: 0 0 1.5rem 0; }
+
+.callout {
+  overflow: hidden;
+  background-color: transparent;
+  background-color: rgba(96, 198, 89, 0.2);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#3360C659,endColorstr=#3360C659);
+  zoom: 1;
+  padding: 0.5em 0.5em 0.5em 1em;
+  border-left: 6px solid #60c659;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-color: transparent;
+  background: rgba(102, 137, 204, 0.2);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#3360C659,endColorstr=#3360C659);
+  zoom: 1;
+  padding: 24px;
+  padding: 1.5rem;
+  border-left: 6px solid #0c66be;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  margin: 0 0 24px 0;
+  margin: 0 0 1.5rem 0; }
+  .callout.success {
+    background: rgba(96, 198, 89, 0.2);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#336689CC,endColorstr=#336689CC);
+    border-left: 6px solid #60c659; }
+  .callout.danger {
+    background: rgba(96, 198, 89, 0.2);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#336689CC,endColorstr=#336689CC);
+    border-left: 6px solid #e00747; }
+
+.callout.alert, div.alert {
+  background-color: transparent;
+  background-color: rgba(224, 7, 71, 0.2);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33E00747,endColorstr=#33E00747);
+  zoom: 1;
+  padding: 0.5em 0.5em 0.5em 1em;
+  border-left: 6px solid #e00747;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px; }
+
+.callout.info {
+  background-color: transparent;
+  background-color: rgba(12, 102, 190, 0.2);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#330C66BE,endColorstr=#330C66BE);
+  zoom: 1;
+  padding: 0.5em 0.5em 0.5em 1em;
+  border-left: 6px solid #0c66be;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px; }
+
+.callout.note {
+  background-color: transparent;
+  background-color: rgba(150, 150, 150, 0.2);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33969696,endColorstr=#33969696);
+  zoom: 1;
+  padding: 0.5em 0.5em 0.5em 1em;
+  border-left: 6px solid #969696;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px; }
+
+.callout.highlight {
+  background-color: transparent;
+  background-color: rgba(255, 198, 30, 0.2);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33FFC61E,endColorstr=#33FFC61E);
+  zoom: 1;
+  padding: 0.5em 0.5em 0.5em 1em;
+  border-left: 6px solid #ffc61e;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px; }
 
 .heading {
   font-family: "ChevinLight", Helvetica, Arial, sans-serif; }
 
 .body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
-
-.italic {
-  font-style: italic; }
-
-.strong {
-  font-weight: bold; }
 
 h1 {
   display: block;
@@ -540,6 +596,42 @@ h6 {
   margin: 0;
   text-rendering: optimizelegibility; }
 
+small {
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 12px;
+  line-height: 0.75rem; }
+
+b, strong {
+  font-weight: bold; }
+
+i, cite, em, var, address, dfn {
+  font-style: italic; }
+
+.text-left {
+  text-align: left; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+.text-muted {
+  color: #969696; }
+
+.text-success {
+  color: #60c659; }
+
+.text-info {
+  color: #0c66be; }
+
+.text-warning {
+  color: #ffc61e; }
+
+.text-danger {
+  color: #e00747; }
+
 a:link, a:visited {
   color: #0c6dcc;
   text-decoration: none; }
@@ -548,10 +640,6 @@ a:hover {
   color: underline;
   color: #000023;
   text-decoration: underline; }
-
-small {
-  font-size: 13.6px;
-  font-size: 0.85rem; }
 
 time {
   font-size: 14px;
@@ -570,6 +658,8 @@ blockquote {
   font-size: 1.25rem;
   margin: 12px 40px;
   margin: 0.75rem 2.5rem; }
+  blockquote small {
+    color: #403f41; }
 
 hr {
   clear: both;
@@ -772,7 +862,7 @@ ol.tag-list li {
 
 form abbr[title="Required"] {
   border: none;
-  color: #ce001f; }
+  color: #e00747; }
 
 fieldset {
   border: 1px solid #cccccc;

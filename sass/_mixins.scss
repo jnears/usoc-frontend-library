@@ -170,6 +170,23 @@
   // border-bottom: 2px solid $blue;
 }
 
+@mixin transparent($color, $alpha) {
+  $rgba: rgba($color, $alpha);
+  $ie-hex-str: ie-hex-str($rgba);
+  background-color: transparent;
+  background-color: $rgba;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex-str},endColorstr=#{$ie-hex-str});
+  zoom: 1;
+}
+
+@mixin callout($color)
+{
+  @include transparent($color, 0.2);
+  padding: 0.5em 0.5em 0.5em 1em;
+  border-left: 6px solid $color;
+  @include rounded;
+}
+
 //FONT AWESOME
 @mixin fa-icon-rotate($degrees, $rotation) {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation);

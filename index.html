@@ -25,6 +25,7 @@
 <div class="container" role="main">
 
 <h1>Typography</h1>
+<h2>Headings</h2>
 <h1>h1.heading</h1>
 <h1>h1.heading<span>span. subheading text here</span></h1>
 <h1>h1.heading<span class="inline"> span. inline</span></h1>
@@ -45,8 +46,8 @@ consequat. Duis aute irure dolor in reprehenderit</p>
 <h6>h6.heading</h6>
 <p>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 consequat. Duis aute irure dolor in reprehenderit</p>
-
-<h1>Body Copy</h1>
+<hr>
+<h2>Body Copy</h2>
 <p class="subheading">P SUBHEADING Ut enim ad minim veniam,
 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 consequat. <a href="#">Duis aute irure dolor</a> in reprehenderit.</p> 
@@ -56,7 +57,7 @@ quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur.</p>
 
-<p class="heading italic strong">Ut enim ad minim veniam,
+<p class="heading">Ut enim ad minim veniam,
 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
@@ -67,17 +68,58 @@ quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<hr>
+
+<h2>Emphasis</h2>
+<p>Make use of HTML's default emphasis tags with lightweight styles.</p>
+
+<h3>Small text</h3>
+
+<small>This is an example of some small text.</small>
+
+<h3>Bold</h3>
+<p>The following snippet of text is <strong>rendered as bold text.</strong></p>
+
+<h3>Italic</h3>
+<p>The following snippet of text is <em>rendered as italic text.</em></p>
+
+<h3>Alignment</h3>
+Realign text to components with text alignment classes.
+<p class="text-left">Left aligned text.</p>
+<p class="text-center">Center aligned text.</p>
+<p class="text-right">Right aligned text.</p>
+
+<h3>Emphasise text using colour</h3>
+<p class="text-muted">Duis aute irure dolor in reprehenderit in voluptate</p>
+<p class="text-success">Duis aute irure dolor in reprehenderit in voluptate</p>
+<p class="text-info">Duis aute irure dolor in reprehenderit in voluptate</p>
+<p class="text-warning">Duis aute irure dolor in reprehenderit in voluptate</p>
+<p class="text-danger">Duis aute irure dolor in reprehenderit in voluptate</p>
 
 
 
-<h2>Blockquote</h2>
-
+<h2>Quotes</h2>
+<h3>Normal blockquote</h3>
 
 <blockquote>
-<p class="italic">“quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+<p>“quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur.”</p>
 </blockquote>
+
+<h3>Blockquote options</h3>
+<p>Can name a source</p>
+<blockquote>
+<p>“quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur.”</p>
+<!-- <small>Someone famous in <cite title="Source Title">Source Title</cite></small> -->
+</blockquote>
+</blockquote>
+
+
+
+<hr>
 
 <p class="highlight italic">Ut enim ad minim veniam,
 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -85,17 +127,18 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu <a href="#">fugiat nulla pariatur</a>. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-<p class="callout">CALLOUT. consequat. Duis aute irure <a href="#">fugiat nulla pariatur</a> dolor</p>
-<p class="callout">CALLOUT. consequat. Duis aute irure <a href="#">fugiat nulla pariatur</a> dolor</p>
+<hr>
 
-<p><i class="fa fa-camera-retro fa-lg"></i> fa-camera-retro</p>
+<h2>Callout</h2>
 
-<h2>H5 Heading</h2>
-<p>Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p class="callout">CALLOUT. consequat. Duis aute irure <a href="#">fugiat nulla pariatur</a> dolor</p>
+<p class="callout success">CALLOUT. consequat. Duis aute irure <a href="#">fugiat nulla pariatur</a> dolor</p>
+
+<p class="callout danger">CALLOUT. consequat. Duis aute irure <a href="#">fugiat nulla pariatur</a> dolor</p>
+
+
+
+<hr>
 
 <h2>Lists</h2>
 
@@ -300,7 +343,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 <button type="button" class="btn btn-yellow large">btn-yellow large</button> -->
 <!-- <time datetime="2013-10-09">DATETIME - 09 Oct 2013</time> -->
-
+<p><i class="fa fa-camera-retro fa-lg"></i> fa-camera-retro</p>
 <a href="#" id="show-grid">Toggle grid</a>
 
 
