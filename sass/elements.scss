@@ -29,57 +29,22 @@ p, pre {
 }
 
 .callout {
-    overflow: hidden;
-    @include callout($green);
-    background-color: transparent;
-    background: rgba(102,137,204,0.2);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#3360C659,endColorstr=#3360C659);
-    zoom: 1;
-    @include rem(padding, 24px);
-    border-left: 6px solid $blue;
-    @include rounded;
-    @include rem(margin, 0 0 24px 0);
-    .info { 
-    }
-    &.success {
-     background: rgba(96,198,89,0.2);
-     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#336689CC,endColorstr=#336689CC);
-     border-left: 6px solid $green;
-    }
-    &.danger {
-     background: rgba(96,198,89,0.2);
-     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#336689CC,endColorstr=#336689CC);
-     border-left: 6px solid $red;
-    }
-  }
-
-
-
-.callout.alert, div.alert
-{
-  @include callout($pink);
-}
-
-.callout.info
-{
+  overflow: hidden;
   @include callout($blue);
+  zoom: 1;
+  @include rem(padding, 24px);
+  border-left: 6px solid $blue;
+  @include rounded;
+  @include rem(margin, 0 0 24px 0);
+  &.success {
+    @include callout($green);
+  }
+  &.alert {
+    @include callout($red);
+  }
 }
 
-.callout.note
-{
-  @include callout($grey);
-}
 
-.callout.highlight
-{
-  @include callout($yellow);
-}
-
-
-
-.heading {
-  font-family: $heading_font;
-}
 
 .body {
   font-family: $body_font;
@@ -233,7 +198,31 @@ blockquote {
   & small {
     color: $dark_grey;
   }
+  &.pullquote {
+    position: relative;
+    font-weight: normal;
+    @include green_gradient;
+    @include rounded;
+    font-family: ChevinLight;
+    @include rem-fallback(font-size, 1.25);
+    @include rem-fallback(padding, 1.5);
+    width: 30%;
+    float: right;
+    color: $white;
+    @include rem-fallback(margin, 0, 0, 1.5, 1.5);
+    & a {
+      color: $white;
+      text-decoration: underline;
+      &:hover {
+      color: $white;
+      text-decoration: none;
+      }
+    } 
+  }
 }
+
+
+
 
 hr {
   clear: both;

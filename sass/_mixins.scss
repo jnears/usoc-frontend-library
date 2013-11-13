@@ -182,7 +182,6 @@
 @mixin callout($color)
 {
   @include transparent($color, 0.2);
-  padding: 0.5em 0.5em 0.5em 1em;
   border-left: 6px solid $color;
   @include rounded;
 }

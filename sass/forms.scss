@@ -32,7 +32,7 @@ div.field {
   }
   &.large {
   @include rem-fallback(min-height, 6);
-  @include rem-fallback(height, 7.5);
+  @include rem-fallback(height, 9);
   }
 }
 
@@ -53,6 +53,10 @@ input[type=text],
     }
 }
 
-textarea{
-    @include rem-fallback(height, 6);
-    }
+textarea {
+  @include rem-fallback(height, 6);
+}
+
+form input:invalid, form textarea:invalid, form select:invalid {
+outline: 3px solid #ce001f;
+}

@@ -437,17 +437,13 @@ p, pre {
 .callout {
   overflow: hidden;
   background-color: transparent;
-  background-color: rgba(96, 198, 89, 0.2);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#3360C659,endColorstr=#3360C659);
+  background-color: rgba(12, 102, 190, 0.2);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#330C66BE,endColorstr=#330C66BE);
   zoom: 1;
-  padding: 0.5em 0.5em 0.5em 1em;
-  border-left: 6px solid #60c659;
+  border-left: 6px solid #0c66be;
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
-  background-color: transparent;
-  background: rgba(102, 137, 204, 0.2);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#3360C659,endColorstr=#3360C659);
   zoom: 1;
   padding: 24px;
   padding: 1.5rem;
@@ -458,60 +454,23 @@ p, pre {
   margin: 0 0 24px 0;
   margin: 0 0 1.5rem 0; }
   .callout.success {
-    background: rgba(96, 198, 89, 0.2);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#336689CC,endColorstr=#336689CC);
-    border-left: 6px solid #60c659; }
-  .callout.danger {
-    background: rgba(96, 198, 89, 0.2);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#336689CC,endColorstr=#336689CC);
-    border-left: 6px solid #e00747; }
-
-.callout.alert, div.alert {
-  background-color: transparent;
-  background-color: rgba(224, 7, 71, 0.2);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33E00747,endColorstr=#33E00747);
-  zoom: 1;
-  padding: 0.5em 0.5em 0.5em 1em;
-  border-left: 6px solid #e00747;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px; }
-
-.callout.info {
-  background-color: transparent;
-  background-color: rgba(12, 102, 190, 0.2);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#330C66BE,endColorstr=#330C66BE);
-  zoom: 1;
-  padding: 0.5em 0.5em 0.5em 1em;
-  border-left: 6px solid #0c66be;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px; }
-
-.callout.note {
-  background-color: transparent;
-  background-color: rgba(150, 150, 150, 0.2);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33969696,endColorstr=#33969696);
-  zoom: 1;
-  padding: 0.5em 0.5em 0.5em 1em;
-  border-left: 6px solid #969696;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px; }
-
-.callout.highlight {
-  background-color: transparent;
-  background-color: rgba(255, 198, 30, 0.2);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33FFC61E,endColorstr=#33FFC61E);
-  zoom: 1;
-  padding: 0.5em 0.5em 0.5em 1em;
-  border-left: 6px solid #ffc61e;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px; }
-
-.heading {
-  font-family: "ChevinLight", Helvetica, Arial, sans-serif; }
+    background-color: transparent;
+    background-color: rgba(96, 198, 89, 0.2);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#3360C659,endColorstr=#3360C659);
+    zoom: 1;
+    border-left: 6px solid #60c659;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px; }
+  .callout.alert {
+    background-color: transparent;
+    background-color: rgba(224, 7, 71, 0.2);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33E00747,endColorstr=#33E00747);
+    zoom: 1;
+    border-left: 6px solid #e00747;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px; }
 
 .body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
@@ -660,6 +619,47 @@ blockquote {
   margin: 0.75rem 2.5rem; }
   blockquote small {
     color: #403f41; }
+  blockquote.pullquote {
+    position: relative;
+    font-weight: normal;
+    background: #60c659;
+    /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzVmYmE1YSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ4JSIgc3RvcC1jb2xvcj0iIzVmYmE1YSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUzJSIgc3RvcC1jb2xvcj0iIzVjYjQ1NyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM1M2EyNGUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    *background: #60c659;
+    background: -moz-linear-gradient(top, #5fba5a 0%, #5fba5a 48%, #5cb457 53%, #53a24e 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5fba5a), color-stop(48%, #5fba5a), color-stop(53%, #5cb457), color-stop(100%, #53a24e));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #5fba5a 0%, #5fba5a 48%, #5cb457 53%, #53a24e 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #5fba5a 0%, #5fba5a 48%, #5cb457 53%, #53a24e 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #5fba5a 0%, #5fba5a 48%, #5cb457 53%, #53a24e 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #5fba5a 0%, #5fba5a 48%, #5cb457 53%, #53a24e 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5fba5a', endColorstr='#53a24e',GradientType=0 );
+    /* IE6-8 */
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    font-family: ChevinLight;
+    font-size: 20px;
+    font-size: 1.25rem;
+    padding: 24px;
+    padding: 1.5rem;
+    width: 30%;
+    float: right;
+    color: white;
+    margin: 0px 0px 24px 24px;
+    margin: 0rem 0rem 1.5rem 1.5rem; }
+    blockquote.pullquote a {
+      color: white;
+      text-decoration: underline; }
+      blockquote.pullquote a:hover {
+        color: white;
+        text-decoration: none; }
 
 hr {
   clear: both;
@@ -893,8 +893,8 @@ div.field {
   div.field.large {
     min-height: 96px;
     min-height: 6rem;
-    height: 120px;
-    height: 7.5rem; }
+    height: 144px;
+    height: 9rem; }
 
 input[type=text],
 input[type=number],
@@ -921,6 +921,9 @@ select {
 textarea {
   height: 96px;
   height: 6rem; }
+
+form input:invalid, form textarea:invalid, form select:invalid {
+  outline: 3px solid #ce001f; }
 
 header[role=banner] {
   position: fixed;
