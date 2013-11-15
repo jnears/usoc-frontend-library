@@ -135,6 +135,10 @@ i, cite, em, var, address, dfn {
 font-style: italic;
 }
 
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
 .text-left {
 text-align: left;
 }
@@ -210,6 +214,10 @@ blockquote {
     float: right;
     color: $white;
     @include rem-fallback(margin, 0, 0, 1.5, 1.5);
+    &.left {
+      float: left;
+      @include rem-fallback(margin, 0, 1.5, 1.5, 0);
+    }
     & a {
       color: $white;
       text-decoration: underline;

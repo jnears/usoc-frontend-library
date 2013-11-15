@@ -83,6 +83,9 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 <h3>Italic</h3>
 <p>The following snippet of text is <em>rendered as italic text.</em></p>
 
+<h3>Abbreviation</h3>
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
 <h3>Alignment</h3>
 Realign text to components with text alignment classes.
 <p class="text-left">Left aligned text.</p>
@@ -120,9 +123,9 @@ cillum dolore eu fugiat nulla pariatur.”</p>
 
 
 <hr>
-
+<h3>Pull quote</h3>
 <blockquote class="pullquote">
-  <p>“Lorem ipsum dolor sit amet, consectetuer adipiscing elit. In accumsan diam itae velit. Aliquam vehicula, turpis sed egestas porttitor, est ligula egestas leo, <a href="#">fugiat nulla pariatur</a> at interdum leo ante ut risus.”
+  <p>“Ligula egestas leo, <a href="#">fugiat nulla pariatur</a> at interdum leo ante ut risus.”
   <b>—Joe Bloggs</b></p> 
 </blockquote>
 
@@ -141,6 +144,11 @@ cillum dolore eu fugiat nulla pariatur.”</p>
 <p>“quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur.”</p>
+
+<blockquote class="pullquote left">
+  <p>“Lorem ipsum dolor sit amet, consectetuer adipiscing elit. In accumsan diam itae velit. Aliquam vehicula”<br />
+  <b>—Joe Bloggs</b></p> 
+</blockquote>
 
 <p>“quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -205,13 +213,12 @@ cillum dolore eu fugiat nulla pariatur.”</p>
 
 <h2>Forms</h2>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut <a href="#">labore et dolore</a> magna aliqua. Ut enim ad minim veniam</p>
+   
 
       <form>
-        <!-- <fieldset>
-          <legend>Legend Name</legend> -->
-
+       <fieldset>
+          <legend>Legend Name</legend>
+             <p>Sed do eiusmod tempor incididunt ut <a href="#"><em>labore et dolore</em></a> magna aliqua. Ut enim ad minim veniam</p>
           <div class="field">
             <label for="name">Name</label>
             <input type="text" name="name" placeholder="at least 3 characters" />
@@ -232,7 +239,9 @@ cillum dolore eu fugiat nulla pariatur.”</p>
             <textarea></textarea>
           </div>
 
-     <!--     <div class="field">
+
+
+    <div class="field">
             <label for="nights">Nights</label>
             <input type="number" name="nights" value="1" min="1" max="30" required>
           </div>
@@ -247,7 +256,7 @@ cillum dolore eu fugiat nulla pariatur.”</p>
               <option>5</option>
             </select>
           </div>
-
+   
           <fieldset class="options">
           <legend>Checkbox <abbr title="Required">*</abbr></legend>
           <ul>
@@ -256,7 +265,7 @@ cillum dolore eu fugiat nulla pariatur.”</p>
               <li><label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox"> Choice C</label></li>
           </ul>
           </fieldset>
-
+  
           <fieldset class="options">
           <legend>Radios <abbr title="Required">*</abbr></legend>
           <ul>
@@ -266,12 +275,11 @@ cillum dolore eu fugiat nulla pariatur.”</p>
           </ul>
           </fieldset>
 
--->
           <div class="field control">
             <input type="submit" value="Save" class="btn btn-blue" /><a href="#">cancel</a>
           </div> 
 
-       <!-- </fieldset> -->
+       </fieldset>
       </form>
 
 
