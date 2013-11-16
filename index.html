@@ -282,41 +282,130 @@ cillum dolore eu fugiat nulla pariatur.”</p>
        </fieldset>
       </form>
 
+<hr>
 
 <h2>Tables</h2>
 
-<table border="1">
-  <thead>
-    <tr>
-      <th>Month</th>
-      <th>Savings</th>
-    </tr>
-  </thead>
-  <tfoot>
-    <tr>
-      <td>Sum</td>
-      <td>£380</td>
-    </tr>
-  </tfoot>
-  <tbody>
-    <tr>
-      <td>January</td>
-      <td>£100</td>
-    </tr>
-    <tr>
-      <td>February</td>
-      <td>£100</td>
-    </tr>
-    <tr>
-      <td>March</td>
-      <td>£100</td>
-    </tr>
-    <tr>
-      <td>April</td>
-      <td>£80</td>
-    </tr>
-  </tbody>
-</table>
+<p><strong>Standard table (table)</strong></p>
+
+<table class="table">
+  <caption>This is a caption</caption>
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Username</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">1</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@TwBootstrap</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+              <tfoot>
+          <tr>
+              <th scope="col">1</th>
+              <th scope="col">2</th>
+              <th scope="col">3</th>
+              <th scope="col">4</th>
+          </tr>
+      </tfoot>
+        </tbody>
+      </table>
+
+  <p><strong>Striped table (table zebra)</strong></p>
+
+      <table class="table zebra">
+        <caption>This is a caption</caption>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Username</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@TwBootstrap</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+        </tbody>
+      </table>
+
+  <p><strong>Striped table (table bordered)</strong></p>
+
+<table class="table bordered">
+  <caption>This is a caption</caption>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Username</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">1</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@TwBootstrap</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+<hr>
 
 <h2>Buttons</h2>
 
@@ -413,9 +502,9 @@ cillum dolore eu fugiat nulla pariatur.”</p>
 
 <script  src="script/jquery-1.10.2.min.js"></script>
 <script>
-  £( document ).ready(function() {
-    £( "a#show-grid" ).click(function( ) {
-        £("html").toggleClass("grid");
+  $( document ).ready(function() {
+    $( "a#show-grid" ).click(function( ) {
+        $("html").toggleClass("grid");
     });
 });
 
