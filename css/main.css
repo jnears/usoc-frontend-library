@@ -385,8 +385,8 @@ html {
     background: url(../images/grid.png) center 0px repeat white; }
 
 p, pre {
-  margin: 0 0 24px 0;
-  margin: 0 0 1.5rem 0;
+  margin: 0px 0px 24px 0px;
+  margin: 0rem 0rem 1.5rem 0rem;
   font-style: normal; }
   p.subheading, pre.subheading {
     font-size: 20px;
@@ -451,8 +451,8 @@ p, pre {
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
-  margin: 0 0 24px 0;
-  margin: 0 0 1.5rem 0; }
+  margin: 0px 0px 24px 0px;
+  margin: 0rem 0rem 1.5rem 0rem; }
   .callout.success {
     background-color: transparent;
     background-color: rgba(96, 198, 89, 0.2);
