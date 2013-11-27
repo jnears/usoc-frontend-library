@@ -19,15 +19,14 @@ form {
   label {
     font-weight: normal;
     display:block;
-    &.inline{
+    &.inline {
     display: inline;
-    @include rem-fallback(line-height, 2.3);
+    @include rem-fallback(line-height, 1.5);
     float: left;
-    width: 25%;
     padding-right: 1em;
     text-align: right;
-    }
   }
+}
 
   legend {
     @include rem-fallback(font-size, 1.2);
@@ -35,8 +34,6 @@ form {
     font-family: $chevin_light;
    }
 }
-
-
 
 div.field {
   @include rem-fallback(min-height, ($baseline * 2) / $base_font_size);
@@ -72,6 +69,11 @@ input[type=text],
 
 textarea {
   @include rem-fallback(height, 6);
+}
+
+checkbox inline {
+  display: inline-block;
+      vertical-align: middle;
 }
 
 form input:invalid, form textarea:invalid, form select:invalid {

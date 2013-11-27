@@ -23,8 +23,9 @@
 </header>
 
 <div class="container" role="main">
-
+<section class="guide">
 <h1>Typography</h1>
+<hr>
 <h2>Headings</h2>
 <h1>h1.heading</h1>
 <h1>h1.heading<span>span. subheading text here</span></h1>
@@ -249,30 +250,43 @@ cillum dolore eu fugiat nulla pariatur.”</p>
           <div class="field">
             <label for="country">Country</label>
             <select name="country">
-              <option>1 England</option>
-              <option>2 Ireland</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+              <option value="" selected="selected">Select Country</option>
+              <option value="United States">United States</option>
+              <option value="United Kingdom">United Kingdom</option>
+              <option value="Afghanistan">Afghanistan</option>
+              <option value="Albania">Albania</option>
+              <option value="Algeria">Algeria</option>
+              <option value="American Samoa">American Samoa</option>
+              <option value="Andorra">Andorra</option>
+              <option value="Angola">Angola</option>
+              <option value="Anguilla">Anguilla</option>
+              <option value="Antarctica">Antarctica</option>
             </select>
           </div>
    
           <fieldset class="options">
           <legend>Checkbox <abbr title="Required">*</abbr></legend>
-          <ul>
-              <li><label for="checkbox1"><input id="checkbox1" name="checkbox" type="checkbox" checked="checked"> Choice A</label></li>
-              <li><label for="checkbox2"><input id="checkbox2" name="checkbox" type="checkbox"> Choice B</label></li>
-              <li><label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox"> Choice C</label></li>
-          </ul>
+              <p>Default checkbox</p>
+              <label for="checkbox1"><input id="checkbox1" name="checkbox" type="checkbox" checked="checked"> Choice A</label>
+              <label for="checkbox2"><input id="checkbox2" name="checkbox" type="checkbox"> Choice B</label>
+              <label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox"> Choice C</label>
+              <p>Inline checkbox</p>
+              <label for="inlinecheckbox1" class="checkbox inline"><input id="inlinecheckbox1" name="checkbox" type="checkbox" checked="checked"> Choice A</label>
+              <label for="inlinecheckbox2" class="checkbox inline"><input id="inlinecheckbox2" name="checkbox" type="checkbox"> Choice B</label>
+              <label for="inlinecheckbox3" class="checkbox inline"><input id="inlinecheckbox3" name="checkbox" type="checkbox"> Choice C</label>
+         
           </fieldset>
   
           <fieldset class="options">
-          <legend>Radios <abbr title="Required">*</abbr></legend>
-          <ul>
-              <li><label for="radio1"><input id="radio1" name="radio" type="radio" checked="checked"> Choice A</label></li>
-              <li><label for="radio2"><input id="radio2" name="radio" type="radio"> Choice B</label></li>
-              <li><label for="radio3"><input id="radio3" name="radio" type="radio"> Choice C</label></li>
-          </ul>
+            <legend>Radios <abbr title="Required">*</abbr></legend>
+              <p>Default radios</p>
+              <label for="radio1"><input id="radio1" name="radio" type="radio" checked="checked"> Choice A</label>
+              <label for="radio2"><input id="radio2" name="radio" type="radio"> Choice B</label>
+              <label for="radio3"><input id="radio3" name="radio" type="radio"> Choice C</label>
+              <p>Inline radios</p>
+              <label for="inlineradio1" class="radio inline"><input id="inlineradio1" name="radio" type="radio" checked="checked"> Choice A</label>
+              <label for="inlineradio2" class="radio inline"><input id="inlineradio2" name="radio" type="radio"> Choice B</label>
+              <label for="inlineradio3" class="radio inline"><input id="inlineradio3" name="radio" type="radio"> Choice C</label>
           </fieldset>
 
           <div class="field control">
@@ -404,6 +418,32 @@ cillum dolore eu fugiat nulla pariatur.”</p>
         </tbody>
       </table>
 
+<p><strong><a href="https://www.understandingsociety.ac.uk/documentation/mainstage/dataset-documentation">Dividing borders only</a> (table divided)</strong></p>
+<p>Includes colspans to fix the widths (<a href="http://jsfiddle.net/csswizardry/Df2tt/embedded/result%2Chtml%2Ccss/">see</a>)</p>
+<table class="table divided grid">
+  <tbody>
+    <tr>
+      <th colspan="6">Datafile</th>
+      <th colspan="14">Description</th>
+      <th colspan="4">Waves</th>
+    </tr>
+    <tr>
+      <td colspan="6">adopt</td>
+      <td colspan="14">Adopted and step-child information</td>
+      <td colspan="4"><a href="#">1</a></td>
+    </tr>
+    <tr>
+      <td colspan="6">callrec</td>
+      <td colspan="14">Call records</td>
+      <td colspan="4"><a href="#">1</a>, <a href="#">3</a></td>
+    </tr>
+    <tr>
+      <td colspan="6">child</td>
+      <td colspan="14">Childcare, consent</td>
+      <td colspan="4"><a href="#">3</a></td>
+    </tr>
+  </tbody>
+</table>
 
 <hr>
 
@@ -495,9 +535,16 @@ cillum dolore eu fugiat nulla pariatur.”</p>
 <!-- <time datetime="2013-10-09">DATETIME - 09 Oct 2013</time> -->
 <p><i class="fa fa-user  fa-lg"></i> fa-camera-retro</p>
 <a href="#" id="show-grid">Toggle grid</a>
-
-
+</section>
+<aside class="nav styles">
+  <nav class="nav guide">
+   <ul>
+      <li><a href = "#">Link</a></li>
+    </ul>
+  </div>
+</aside>
 </div>
+
 
 
 <script  src="script/jquery-1.10.2.min.js"></script>
