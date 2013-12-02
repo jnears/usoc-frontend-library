@@ -18,7 +18,7 @@ caption {
 }
 
 .table {
-  @include rem-fallback(margin, ($baseline / $base_font_size), 0);
+    @include rem-fallback(margin, ($baseline / $base_font_size), 0);
     &>tbody>tr>td, &>thead>tr>th, &>tbody>tr>th, &>tfoot>tr>th  {
     @include rem-fallback(line-height, 1.5);
 	  @include rem-fallback(padding, 0.75);

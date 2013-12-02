@@ -8,7 +8,7 @@ Syntax error: Undefined mixin 'rem-fallback'.
 18: }
 19: 
 20: .table {
-21:   @include rem-fallback(margin, ($baseline / $base_font_size), 0);
+21:     @include rem-fallback(margin, ($baseline / $base_font_size), 0);
 22:     &>tbody>tr>td, &>thead>tr>th, &>tbody>tr>th, &>tfoot>tr>th  {
 23:     @include rem-fallback(line-height, 1.5);
 24: 	  @include rem-fallback(padding, 0.75);
@@ -60,4 +60,4 @@ usoc-frontend-library/sass/tables.scss:21
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'rem-fallback'.\A         on line 21 of usoc-frontend-library/sass/tables.scss, in `rem-fallback'\A         from line 21 of usoc-frontend-library/sass/tables.scss\A \A 16:   text-align: left;\A 17:   font-style: italic;\A 18: }\A 19: \A 20: .table {\A 21:   @include rem-fallback(margin, ($baseline / $base_font_size), 0);\A 22:     &>tbody>tr>td, &>thead>tr>th, &>tbody>tr>th, &>tfoot>tr>th  {\A 23:     @include rem-fallback(line-height, 1.5);\A 24: 	  @include rem-fallback(padding, 0.75);\A 25: 	  vertical-align: middle;\A 26:   }"; }
+  content: "Syntax error: Undefined mixin 'rem-fallback'.\A         on line 21 of usoc-frontend-library/sass/tables.scss, in `rem-fallback'\A         from line 21 of usoc-frontend-library/sass/tables.scss\A \A 16:   text-align: left;\A 17:   font-style: italic;\A 18: }\A 19: \A 20: .table {\A 21:     @include rem-fallback(margin, ($baseline / $base_font_size), 0);\A 22:     &>tbody>tr>td, &>thead>tr>th, &>tbody>tr>th, &>tfoot>tr>th  {\A 23:     @include rem-fallback(line-height, 1.5);\A 24: 	  @include rem-fallback(padding, 0.75);\A 25: 	  vertical-align: middle;\A 26:   }"; }
